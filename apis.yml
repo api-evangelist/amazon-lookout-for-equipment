@@ -8,11 +8,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Machine Learning
-  - Industrial IoT
-  - Predictive Maintenance
-  - Equipment Monitoring
   - AWS
+  - Equipment Monitoring
+  - Industrial IoT
+  - Machine Learning
+  - Predictive Maintenance
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/apis.yml
 created: '2026-03-16'
@@ -28,9 +28,9 @@ apis:
     humanURL: https://aws.amazon.com/lookout-for-equipment/
     baseURL: https://lookoutequipment.amazonaws.com
     tags:
+      - Industrial IoT
       - Machine Learning
       - Predictive Maintenance
-      - Industrial IoT
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_Reference.html
