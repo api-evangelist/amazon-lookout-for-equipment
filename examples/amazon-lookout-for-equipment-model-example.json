@@ -1,0 +1,9 @@
+{
+  "ModelName": "pump-failure-detector",
+  "ModelArn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "DatasetName": "production-resource",
+  "Status": "SUCCESS",
+  "TrainingDataStartTime": "2025-03-15T14:30:00Z",
+  "TrainingDataEndTime": "2025-03-15T14:30:00Z",
+  "CreatedAt": "2025-03-15T14:30:00Z"
+}

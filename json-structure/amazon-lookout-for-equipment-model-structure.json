@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/json-structure/amazon-lookout-for-equipment-model-structure.json",
+  "name": "Model",
+  "description": "An Amazon Lookout for Equipment ML model for anomaly detection.",
+  "type": "object",
+  "properties": {
+    "ModelName": {
+      "type": "string",
+      "description": "The name of the model.",
+      "example": "pump-failure-detector"
+    },
+    "ModelArn": {
+      "type": "string",
+      "description": "The Amazon Resource Name (ARN) of the model."
+    },
+    "DatasetName": {
+      "type": "string",
+      "description": "The name of the dataset used to train the model."
+    },
+    "Status": {
+      "type": "string",
+      "description": "The current status of the model.",
+      "example": "SUCCESS",
+      "enum": [
+        "IN_PROGRESS",
+        "SUCCESS",
+        "FAILED",
+        "IMPORT_IN_PROGRESS"
+      ]
+    },
+    "TrainingDataStartTime": {
+      "type": "datetime",
+      "description": "Indicates the time reference in the dataset from which training data begins."
+    },
+    "TrainingDataEndTime": {
+      "type": "datetime",
+      "description": "Indicates the time reference in the dataset from which training data ends."
+    },
+    "CreatedAt": {
+      "type": "datetime",
+      "description": "The time at which the model was created."
+    }
+  }
+}

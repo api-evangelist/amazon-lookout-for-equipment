@@ -1,0 +1,82 @@
+naftiko: 1.0.0-alpha1
+info:
+  label: Amazon Lookout for Equipment
+  description: Amazon Lookout for Equipment API for managing lookout for equipment resources.
+  tags:
+  - Amazon Lookout for Equipment
+  - AWS
+  created: '2026-04-19'
+  modified: '2026-04-19'
+binds:
+- namespace: env
+  keys:
+    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: lookout-for-equipment
+    baseUri: https://lookoutequipment.us-east-1.amazonaws.com
+    description: Amazon Lookout for Equipment service.
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{AWS_ACCESS_KEY_ID}}'
+      placement: header
+    resources:
+    - name: datasets
+      path: /datasets
+      description: Equipment sensor dataset management
+      operations:
+      - name: createdataset
+        method: POST
+        description: Creates a container (dataset) for a collection of data being ingested for analysis.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: listdatasets
+        method: GET
+        description: Lists all datasets currently available in your account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: describedataset
+        method: GET
+        description: Provides a JSON containing the overall information about a specific dataset.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    port: 8101
+    namespace: lookout-for-equipment-rest
+    resources: []
+  - type: mcp
+    port: 9101
+    namespace: lookout-for-equipment-mcp
+    transport: http
+    tools:
+    - name: createdataset
+      description: Creates a container (dataset) for a collection of data being ingested for analysis.
+      hints:
+        readOnly: false
+        idempotent: false
+      call: lookout-for-equipment.createdataset
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: listdatasets
+      description: Lists all datasets currently available in your account.
+      hints:
+        readOnly: true
+        idempotent: true
+      call: lookout-for-equipment.listdatasets
+      outputParameters:
+      - type: object
+        mapping: $.

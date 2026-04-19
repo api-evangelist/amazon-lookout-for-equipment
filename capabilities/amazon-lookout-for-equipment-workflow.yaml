@@ -1,0 +1,58 @@
+naftiko: 1.0.0-alpha1
+info:
+  label: Amazon Lookout for Equipment Workflow
+  description: Unified workflow capability for Amazon Lookout for Equipment combining resource management and operations.
+  tags:
+  - Amazon Lookout for Equipment
+  - AWS
+  - Workflow
+  created: '2026-04-19'
+  modified: '2026-04-19'
+binds:
+- namespace: env
+  keys:
+    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+capability:
+  consumes:
+  - import: lookout-for-equipment
+    location: ./shared/lookout-for-equipment.yaml
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: lookout-for-equipment-api
+    description: REST API for Amazon Lookout for Equipment workflow.
+    resources: []
+  - type: mcp
+    port: 9090
+    namespace: lookout-for-equipment-mcp
+    transport: http
+    description: MCP server for Amazon Lookout for Equipment.
+    tools:
+    - name: datasets-create-dataset
+      description: Creates a container (dataset) for a collection of data being ingested for analysis.
+      hints:
+        readOnly: false
+        idempotent: false
+      call: lookout-for-equipment.createdataset
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: datasets-list-datasets
+      description: Lists all datasets currently available in your account.
+      hints:
+        readOnly: true
+        idempotent: true
+      call: lookout-for-equipment.listdatasets
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: datasets-describe-dataset
+      description: Provides a JSON containing the overall information about a specific dataset.
+      hints:
+        readOnly: true
+        idempotent: true
+      call: lookout-for-equipment.describedataset
+      outputParameters:
+      - type: object
+        mapping: $.

@@ -1,58 +1,72 @@
 # Amazon Lookout for Equipment (amazon-lookout-for-equipment)
-Amazon Lookout for Equipment uses machine learning to analyze sensor data from your industrial equipment and detect abnormal patterns that signal potential failures. It helps you avoid unplanned equipment downtime by identifying potential equipment failures before they occur.
+Amazon Lookout for Equipment uses ML to analyze sensor data from industrial equipment and detect abnormal behavior before failures occur, helping you predict equipment failures and avoid unplanned downtime.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/apis.yml)
+**URL:** [https://aws.amazon.com/lookout-for-equipment/](https://aws.amazon.com/lookout-for-equipment/)
 
-## Scope
-
-- **Type:** Index 
-- **Position:** Consuming 
-- **Access:** 3rd-Party 
+**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
 
 ## Tags:
 
- - Machine Learning, Industrial IoT, Predictive Maintenance, Equipment Monitoring, AWS
+ - AWS, Machine Learning, IoT, Predictive Maintenance, Industrial
 
 ## Timestamps
 
-- **Created:** 2026-03-16 
-- **Modified:** 2026-03-16 
+- **Created:** 2024-01-15
+- **Modified:** 2026-04-19
 
 ## APIs
 
 ### Amazon Lookout for Equipment API
-The Amazon Lookout for Equipment API provides programmatic access to create and manage datasets, models, inference schedulers, and labels for predictive maintenance of industrial equipment.
 
 **Human URL:** [https://aws.amazon.com/lookout-for-equipment/](https://aws.amazon.com/lookout-for-equipment/)
 
-
-#### Tags:
-
- - Machine Learning, Predictive Maintenance, Industrial IoT
-
 #### Properties
 
-- [Documentation](https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_Reference.html)
-- [OpenAPI](https://api.apis.guru/v2/specs/amazonaws.com/lookoutequipment/2020-12-15/openapi.yaml)
-- [Getting Started](https://aws.amazon.com/lookout-for-equipment/getting-started/)
-- [Pricing](https://aws.amazon.com/lookout-for-equipment/pricing/)
-- [FAQ](https://aws.amazon.com/lookout-for-equipment/faqs/)
+- [OpenAPI](openapi/amazon-lookout-for-equipment-openapi.yml)
+- [JSONSchema](json-schema/amazon-lookout-for-equipment-dataset-schema.json)
+- [JSONSchema](json-schema/amazon-lookout-for-equipment-model-schema.json)
+- [JSONLD](json-ld/amazon-lookout-for-equipment-context.jsonld)
 
-## Common Properties
+## Artifacts
 
-- [Portal](https://aws.amazon.com/lookout-for-equipment/)
-- [Website](https://aws.amazon.com/lookout-for-equipment/)
-- [Documentation](https://docs.aws.amazon.com/lookout-for-equipment/)
-- [Terms of Service](https://aws.amazon.com/service-terms/)
-- [Privacy Policy](https://aws.amazon.com/privacy/)
-- [Support](https://aws.amazon.com/premiumsupport/)
-- [Blog](https://aws.amazon.com/blogs/machine-learning/tag/amazon-lookout-for-equipment/)
-- [GitHub Organization](https://github.com/aws)
-- [Console](https://console.aws.amazon.com/lookoutequipment/)
-- [Sign Up](https://portal.aws.amazon.com/billing/signup)
-- [Login](https://signin.aws.amazon.com/)
-- [Status](https://health.aws.amazon.com/health/status)
-- [Contact](https://aws.amazon.com/contact-us/)
+### OpenAPI
+
+- [Amazon Lookout for Equipment API](openapi/amazon-lookout-for-equipment-openapi.yml)
+
+### JSON Schema
+
+- [Dataset](json-schema/amazon-lookout-for-equipment-dataset-schema.json)
+- [Model](json-schema/amazon-lookout-for-equipment-model-schema.json)
+
+### JSON Structure
+
+- [Dataset](json-structure/amazon-lookout-for-equipment-dataset-structure.json)
+- [Model](json-structure/amazon-lookout-for-equipment-model-structure.json)
+
+### JSON-LD
+
+- [Amazon Lookout for Equipment Context](json-ld/amazon-lookout-for-equipment-context.jsonld)
+
+### Examples
+
+- [Dataset Example](examples/amazon-lookout-for-equipment-dataset-example.json)
+- [Model Example](examples/amazon-lookout-for-equipment-model-example.json)
+
+## Capabilities
+
+### Workflow Capabilities
+
+| Workflow | APIs Combined | Tools | Persona |
+|----------|--------------|-------|---------|
+| [Amazon Lookout for Equipment Workflow](capabilities/amazon-lookout-for-equipment-workflow.yaml) | Lookout for Equipment | 8 | Data Scientist, Operations Engineer |
+
+## Vocabulary
+
+- [Amazon Lookout for Equipment Vocabulary](vocabulary/amazon-lookout-for-equipment-vocabulary.yaml)
+
+## Rules
+
+- [Amazon Lookout for Equipment Spectral Rules](rules/amazon-lookout-for-equipment-spectral-rules.yml)
 
 ## Maintainers
 

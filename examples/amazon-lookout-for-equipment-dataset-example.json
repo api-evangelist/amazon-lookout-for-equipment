@@ -1,0 +1,7 @@
+{
+  "DatasetName": "pump-sensors-dataset",
+  "DatasetArn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Status": "ACTIVE",
+  "CreatedAt": "2025-03-15T14:30:00Z",
+  "LastUpdatedAt": "2025-03-15T14:30:00Z"
+}

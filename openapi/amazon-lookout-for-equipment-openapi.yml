@@ -1,0 +1,269 @@
+openapi: 3.1.0
+info:
+  title: Amazon Lookout for Equipment API
+  description: The Amazon Lookout for Equipment API provides programmatic access to manage Lookout for Equipment resources.
+  version: '2024-01-01'
+  contact:
+    name: AWS Support
+    url: https://aws.amazon.com/premiumsupport/
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  x-logo:
+    url: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
+servers:
+- url: https://lookoutequipment.us-east-1.amazonaws.com
+  description: Amazon Lookout for Equipment endpoint
+security:
+- sigv4: []
+tags:
+- name: Datasets
+  description: Equipment sensor dataset management
+paths:
+  /datasets:
+    post:
+      operationId: CreateDataset
+      summary: Amazon Lookout for Equipment Create Dataset
+      description: Creates a container (dataset) for a collection of data being ingested for analysis.
+      tags:
+      - Datasets
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+    get:
+      operationId: ListDatasets
+      summary: Amazon Lookout for Equipment List Datasets
+      description: Lists all datasets currently available in your account.
+      tags:
+      - Datasets
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+  /datasets/{DatasetName}:
+    get:
+      operationId: DescribeDataset
+      summary: Amazon Lookout for Equipment Describe Dataset
+      description: Provides a JSON containing the overall information about a specific dataset.
+      tags:
+      - Datasets
+      parameters:
+      - name: DatasetName
+        in: path
+        required: true
+        schema:
+          type: string
+        description: The name of the dataset.
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+    delete:
+      operationId: DeleteDataset
+      summary: Amazon Lookout for Equipment Delete Dataset
+      description: Deletes a dataset and its associated data.
+      tags:
+      - Datasets
+      parameters:
+      - name: DatasetName
+        in: path
+        required: true
+        schema:
+          type: string
+        description: The name of the dataset.
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+  /models:
+    post:
+      operationId: CreateModel
+      summary: Amazon Lookout for Equipment Create Model
+      description: Creates an ML model for data inference.
+      tags:
+      - Datasets
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+    get:
+      operationId: ListModels
+      summary: Amazon Lookout for Equipment List Models
+      description: Generates a list of all models in the account, including model name and ARN.
+      tags:
+      - Datasets
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+  /models/{ModelName}:
+    get:
+      operationId: DescribeModel
+      summary: Amazon Lookout for Equipment Describe Model
+      description: Provides a JSON containing the overall information about a specific ML model.
+      tags:
+      - Datasets
+      parameters:
+      - name: ModelName
+        in: path
+        required: true
+        schema:
+          type: string
+        description: The name of the machine learning model.
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+  /inference-schedulers/{InferenceSchedulerName}/start:
+    post:
+      operationId: StartInferenceScheduler
+      summary: Amazon Lookout for Equipment Start Inference Scheduler
+      description: Starts an inference scheduler.
+      tags:
+      - Datasets
+      parameters:
+      - name: InferenceSchedulerName
+        in: path
+        required: true
+        schema:
+          type: string
+        description: The name of the inference scheduler.
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+components:
+  securitySchemes:
+    sigv4:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: AWS Signature Version 4 authentication
+  schemas:
+    Dataset:
+      type: object
+      description: An Amazon Lookout for Equipment dataset containing equipment sensor data.
+      properties:
+        DatasetName:
+          type: string
+          description: The name of the dataset.
+          example: pump-sensors-dataset
+        DatasetArn:
+          type: string
+          description: The Amazon Resource Name (ARN) of the dataset.
+        Status:
+          type: string
+          description: The current status of the dataset.
+          example: ACTIVE
+          enum:
+          - CREATED
+          - INGESTION_IN_PROGRESS
+          - ACTIVE
+        CreatedAt:
+          type: string
+          description: The time at which the dataset was created.
+          format: date-time
+        LastUpdatedAt:
+          type: string
+          description: The time at which the dataset was last updated.
+          format: date-time
+    Model:
+      type: object
+      description: An Amazon Lookout for Equipment ML model for anomaly detection.
+      properties:
+        ModelName:
+          type: string
+          description: The name of the model.
+          example: pump-failure-detector
+        ModelArn:
+          type: string
+          description: The Amazon Resource Name (ARN) of the model.
+        DatasetName:
+          type: string
+          description: The name of the dataset used to train the model.
+        Status:
+          type: string
+          description: The current status of the model.
+          example: SUCCESS
+          enum:
+          - IN_PROGRESS
+          - SUCCESS
+          - FAILED
+          - IMPORT_IN_PROGRESS
+        TrainingDataStartTime:
+          type: string
+          description: Indicates the time reference in the dataset from which training data begins.
+          format: date-time
+        TrainingDataEndTime:
+          type: string
+          description: Indicates the time reference in the dataset from which training data ends.
+          format: date-time
+        CreatedAt:
+          type: string
+          description: The time at which the model was created.
+          format: date-time

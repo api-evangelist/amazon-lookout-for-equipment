@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/json-schema/amazon-lookout-for-equipment-dataset-schema.json",
+  "title": "Dataset",
+  "description": "An Amazon Lookout for Equipment dataset containing equipment sensor data.",
+  "type": "object",
+  "properties": {
+    "DatasetName": {
+      "type": "string",
+      "description": "The name of the dataset.",
+      "example": "pump-sensors-dataset"
+    },
+    "DatasetArn": {
+      "type": "string",
+      "description": "The Amazon Resource Name (ARN) of the dataset."
+    },
+    "Status": {
+      "type": "string",
+      "description": "The current status of the dataset.",
+      "example": "ACTIVE",
+      "enum": [
+        "CREATED",
+        "INGESTION_IN_PROGRESS",
+        "ACTIVE"
+      ]
+    },
+    "CreatedAt": {
+      "type": "string",
+      "description": "The time at which the dataset was created.",
+      "format": "date-time"
+    },
+    "LastUpdatedAt": {
+      "type": "string",
+      "description": "The time at which the dataset was last updated.",
+      "format": "date-time"
+    }
+  }
+}
