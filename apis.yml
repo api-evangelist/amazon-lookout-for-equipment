@@ -1,10 +1,8 @@
 aid: amazon-lookout-for-equipment
 name: Amazon Lookout for Equipment
-description: >-
-  Amazon Lookout for Equipment uses machine learning to analyze sensor data
-  from your industrial equipment and detect abnormal patterns that signal
-  potential failures. It helps you avoid unplanned equipment downtime by
-  identifying potential equipment failures before they occur.
+description: Amazon Lookout for Equipment uses machine learning to analyze sensor data from your industrial equipment and
+  detect abnormal patterns that signal potential failures. It helps you avoid unplanned equipment downtime by identifying
+  potential equipment failures before they occur.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -13,18 +11,15 @@ tags:
 - Industrial IoT
 - Machine Learning
 - Predictive Maintenance
-url: >-
-  https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-04-19'
+modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
 - aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-api
   name: Amazon Lookout for Equipment API
-  description: >-
-    The Amazon Lookout for Equipment API provides programmatic access to
-    create and manage datasets, models, inference schedulers, and labels
-    for predictive maintenance of industrial equipment.
+  description: The Amazon Lookout for Equipment API provides programmatic access to create and manage datasets, models, inference
+    schedulers, and labels for predictive maintenance of industrial equipment.
   humanURL: https://aws.amazon.com/lookout-for-equipment/
   baseURL: https://lookoutequipment.amazonaws.com
   tags:
@@ -48,6 +43,8 @@ apis:
     url: json-schema/amazon-lookout-for-equipment-model-schema.json
   - type: JSONLD
     url: json-ld/amazon-lookout-for-equipment-context.jsonld
+  - type: NaftikoCapability
+    url: capabilities/amazon-lookout-for-equipment-datasets.yaml
 common:
 - type: Portal
   url: https://aws.amazon.com/lookout-for-equipment/
@@ -109,22 +106,20 @@ common:
     description: Connect industrial equipment to AWS via IoT Core for data ingestion.
 - type: SpectralRules
   url: rules/amazon-lookout-for-equipment-spectral-rules.yml
-- type: NaftikoCapability
-  url: capabilities/amazon-lookout-for-equipment-workflow.yaml
 - type: Vocabulary
   url: vocabulary/amazon-lookout-for-equipment-vocabulary.yaml
 - type: Integrations
   url: https://aws.amazon.com/marketplace
 integrations:
-  - name: Sign in
-  - name: Agent Mode
-  - name: 'Why AWS Marketplace?'
-  - name: Get started in AWS Marketplace
-  - name: Industry
-  - name: Resources
-  - name: Become a Channel Partner
-  - name: Sell in AWS Marketplace
-  - name: Manage Your Account
+- name: Sign in
+- name: Agent Mode
+- name: Why AWS Marketplace?
+- name: Get started in AWS Marketplace
+- name: Industry
+- name: Resources
+- name: Become a Channel Partner
+- name: Sell in AWS Marketplace
+- name: Manage Your Account
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

@@ -1,0 +1,315 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Amazon Lookout for Equipment API — Datasets
+  description: 'Amazon Lookout for Equipment API — Datasets. 8 operations. Lead operation: Amazon Lookout for Equipment Create
+    Dataset. Self-contained Naftiko capability covering one Amazon Lookout For Equipment business surface.'
+  tags:
+  - Amazon Lookout For Equipment
+  - Datasets
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    AMAZON_LOOKOUT_FOR_EQUIPMENT_API_KEY: AMAZON_LOOKOUT_FOR_EQUIPMENT_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: amazon-lookout-for-equipment-datasets
+    baseUri: https://lookoutequipment.us-east-1.amazonaws.com
+    description: Amazon Lookout for Equipment API — Datasets business capability. Self-contained, no shared references.
+    resources:
+    - name: datasets
+      path: /datasets
+      operations:
+      - name: createdataset
+        method: POST
+        description: Amazon Lookout for Equipment Create Dataset
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: listdatasets
+        method: GET
+        description: Amazon Lookout for Equipment List Datasets
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: datasets-DatasetName
+      path: /datasets/{DatasetName}
+      operations:
+      - name: describedataset
+        method: GET
+        description: Amazon Lookout for Equipment Describe Dataset
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: DatasetName
+          in: path
+          type: string
+          description: The name of the dataset.
+          required: true
+      - name: deletedataset
+        method: DELETE
+        description: Amazon Lookout for Equipment Delete Dataset
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: DatasetName
+          in: path
+          type: string
+          description: The name of the dataset.
+          required: true
+    - name: inference-schedulers-InferenceSchedulerName-start
+      path: /inference-schedulers/{InferenceSchedulerName}/start
+      operations:
+      - name: startinferencescheduler
+        method: POST
+        description: Amazon Lookout for Equipment Start Inference Scheduler
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: InferenceSchedulerName
+          in: path
+          type: string
+          description: The name of the inference scheduler.
+          required: true
+    - name: models
+      path: /models
+      operations:
+      - name: createmodel
+        method: POST
+        description: Amazon Lookout for Equipment Create Model
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: listmodels
+        method: GET
+        description: Amazon Lookout for Equipment List Models
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: models-ModelName
+      path: /models/{ModelName}
+      operations:
+      - name: describemodel
+        method: GET
+        description: Amazon Lookout for Equipment Describe Model
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: ModelName
+          in: path
+          type: string
+          description: The name of the machine learning model.
+          required: true
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{env.AMAZON_LOOKOUT_FOR_EQUIPMENT_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: amazon-lookout-for-equipment-datasets-rest
+    port: 8080
+    description: REST adapter for Amazon Lookout for Equipment API — Datasets. One Spectral-compliant resource per consumed
+      operation, prefixed with /v1.
+    resources:
+    - path: /v1/datasets
+      name: datasets
+      description: REST surface for datasets.
+      operations:
+      - method: POST
+        name: createdataset
+        description: Amazon Lookout for Equipment Create Dataset
+        call: amazon-lookout-for-equipment-datasets.createdataset
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: GET
+        name: listdatasets
+        description: Amazon Lookout for Equipment List Datasets
+        call: amazon-lookout-for-equipment-datasets.listdatasets
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/datasets/{datasetname}
+      name: datasets-datasetname
+      description: REST surface for datasets-DatasetName.
+      operations:
+      - method: GET
+        name: describedataset
+        description: Amazon Lookout for Equipment Describe Dataset
+        call: amazon-lookout-for-equipment-datasets.describedataset
+        with:
+          DatasetName: rest.DatasetName
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: DELETE
+        name: deletedataset
+        description: Amazon Lookout for Equipment Delete Dataset
+        call: amazon-lookout-for-equipment-datasets.deletedataset
+        with:
+          DatasetName: rest.DatasetName
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/inference-schedulers/{inferenceschedulername}/start
+      name: inference-schedulers-inferenceschedulername-start
+      description: REST surface for inference-schedulers-InferenceSchedulerName-start.
+      operations:
+      - method: POST
+        name: startinferencescheduler
+        description: Amazon Lookout for Equipment Start Inference Scheduler
+        call: amazon-lookout-for-equipment-datasets.startinferencescheduler
+        with:
+          InferenceSchedulerName: rest.InferenceSchedulerName
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/models
+      name: models
+      description: REST surface for models.
+      operations:
+      - method: POST
+        name: createmodel
+        description: Amazon Lookout for Equipment Create Model
+        call: amazon-lookout-for-equipment-datasets.createmodel
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: GET
+        name: listmodels
+        description: Amazon Lookout for Equipment List Models
+        call: amazon-lookout-for-equipment-datasets.listmodels
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/models/{modelname}
+      name: models-modelname
+      description: REST surface for models-ModelName.
+      operations:
+      - method: GET
+        name: describemodel
+        description: Amazon Lookout for Equipment Describe Model
+        call: amazon-lookout-for-equipment-datasets.describemodel
+        with:
+          ModelName: rest.ModelName
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: amazon-lookout-for-equipment-datasets-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Amazon Lookout for Equipment API — Datasets. One tool per consumed operation, routed inline
+      through this capability's consumes block.
+    tools:
+    - name: amazon-lookout-equipment-create-dataset
+      description: Amazon Lookout for Equipment Create Dataset
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-lookout-for-equipment-datasets.createdataset
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-lookout-equipment-list-datasets
+      description: Amazon Lookout for Equipment List Datasets
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: amazon-lookout-for-equipment-datasets.listdatasets
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-lookout-equipment-describe-dataset
+      description: Amazon Lookout for Equipment Describe Dataset
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: amazon-lookout-for-equipment-datasets.describedataset
+      with:
+        DatasetName: tools.DatasetName
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-lookout-equipment-delete-dataset
+      description: Amazon Lookout for Equipment Delete Dataset
+      hints:
+        readOnly: false
+        destructive: true
+        idempotent: true
+      call: amazon-lookout-for-equipment-datasets.deletedataset
+      with:
+        DatasetName: tools.DatasetName
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-lookout-equipment-start-inference
+      description: Amazon Lookout for Equipment Start Inference Scheduler
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-lookout-for-equipment-datasets.startinferencescheduler
+      with:
+        InferenceSchedulerName: tools.InferenceSchedulerName
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-lookout-equipment-create-model
+      description: Amazon Lookout for Equipment Create Model
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-lookout-for-equipment-datasets.createmodel
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-lookout-equipment-list-models
+      description: Amazon Lookout for Equipment List Models
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: amazon-lookout-for-equipment-datasets.listmodels
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-lookout-equipment-describe-model
+      description: Amazon Lookout for Equipment Describe Model
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: amazon-lookout-for-equipment-datasets.describemodel
+      with:
+        ModelName: tools.ModelName
+      outputParameters:
+      - type: object
+        mapping: $.
