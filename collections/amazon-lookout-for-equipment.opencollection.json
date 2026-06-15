@@ -1,0 +1,146 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Amazon Lookout for Equipment API",
+    "version": "2024-01-01"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Datasets",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Amazon Lookout for Equipment List Datasets",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://lookoutequipment.us-east-1.amazonaws.com/datasets"
+          },
+          "docs": "Lists all datasets currently available in your account."
+        },
+        {
+          "info": {
+            "name": "Amazon Lookout for Equipment Create Dataset",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://lookoutequipment.us-east-1.amazonaws.com/datasets"
+          },
+          "docs": "Creates a container (dataset) for a collection of data being ingested for analysis."
+        },
+        {
+          "info": {
+            "name": "Amazon Lookout for Equipment Describe Dataset",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://lookoutequipment.us-east-1.amazonaws.com/datasets/:DatasetName",
+            "params": [
+              {
+                "name": "DatasetName",
+                "value": "",
+                "type": "path",
+                "description": "The name of the dataset."
+              }
+            ]
+          },
+          "docs": "Provides a JSON containing the overall information about a specific dataset."
+        },
+        {
+          "info": {
+            "name": "Amazon Lookout for Equipment Delete Dataset",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://lookoutequipment.us-east-1.amazonaws.com/datasets/:DatasetName",
+            "params": [
+              {
+                "name": "DatasetName",
+                "value": "",
+                "type": "path",
+                "description": "The name of the dataset."
+              }
+            ]
+          },
+          "docs": "Deletes a dataset and its associated data."
+        },
+        {
+          "info": {
+            "name": "Amazon Lookout for Equipment List Models",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://lookoutequipment.us-east-1.amazonaws.com/models"
+          },
+          "docs": "Generates a list of all models in the account, including model name and ARN."
+        },
+        {
+          "info": {
+            "name": "Amazon Lookout for Equipment Create Model",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://lookoutequipment.us-east-1.amazonaws.com/models"
+          },
+          "docs": "Creates an ML model for data inference."
+        },
+        {
+          "info": {
+            "name": "Amazon Lookout for Equipment Describe Model",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://lookoutequipment.us-east-1.amazonaws.com/models/:ModelName",
+            "params": [
+              {
+                "name": "ModelName",
+                "value": "",
+                "type": "path",
+                "description": "The name of the machine learning model."
+              }
+            ]
+          },
+          "docs": "Provides a JSON containing the overall information about a specific ML model."
+        },
+        {
+          "info": {
+            "name": "Amazon Lookout for Equipment Start Inference Scheduler",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://lookoutequipment.us-east-1.amazonaws.com/inference-schedulers/:InferenceSchedulerName/start",
+            "params": [
+              {
+                "name": "InferenceSchedulerName",
+                "value": "",
+                "type": "path",
+                "description": "The name of the inference scheduler."
+              }
+            ]
+          },
+          "docs": "Starts an inference scheduler."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
