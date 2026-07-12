@@ -46,6 +46,14 @@ apis:
       - type: JSONLD
         url: json-ld/amazon-lookout-for-equipment-context.jsonld
 common:
+  - type: TrustCenter
+    url: security/amazon-lookout-for-equipment-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/amazon-lookout-for-equipment-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/amazon-lookout-for-equipment-domain-security.yml
+  - type: Authentication
+    url: authentication/amazon-lookout-for-equipment-authentication.yml
   - type: Portal
     url: https://aws.amazon.com/lookout-for-equipment/
   - type: Portal
