@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: Amazon Lookout for Equipment API
+  title: Amazon Lookout for Equipment Datasets API
   description: The Amazon Lookout for Equipment API provides programmatic access to manage Lookout for Equipment resources.
   version: '2024-01-01'
   contact:
@@ -204,66 +204,3 @@ components:
       name: Authorization
       in: header
       description: AWS Signature Version 4 authentication
-  schemas:
-    Dataset:
-      type: object
-      description: An Amazon Lookout for Equipment dataset containing equipment sensor data.
-      properties:
-        DatasetName:
-          type: string
-          description: The name of the dataset.
-          example: pump-sensors-dataset
-        DatasetArn:
-          type: string
-          description: The Amazon Resource Name (ARN) of the dataset.
-        Status:
-          type: string
-          description: The current status of the dataset.
-          example: ACTIVE
-          enum:
-          - CREATED
-          - INGESTION_IN_PROGRESS
-          - ACTIVE
-        CreatedAt:
-          type: string
-          description: The time at which the dataset was created.
-          format: date-time
-        LastUpdatedAt:
-          type: string
-          description: The time at which the dataset was last updated.
-          format: date-time
-    Model:
-      type: object
-      description: An Amazon Lookout for Equipment ML model for anomaly detection.
-      properties:
-        ModelName:
-          type: string
-          description: The name of the model.
-          example: pump-failure-detector
-        ModelArn:
-          type: string
-          description: The Amazon Resource Name (ARN) of the model.
-        DatasetName:
-          type: string
-          description: The name of the dataset used to train the model.
-        Status:
-          type: string
-          description: The current status of the model.
-          example: SUCCESS
-          enum:
-          - IN_PROGRESS
-          - SUCCESS
-          - FAILED
-          - IMPORT_IN_PROGRESS
-        TrainingDataStartTime:
-          type: string
-          description: Indicates the time reference in the dataset from which training data begins.
-          format: date-time
-        TrainingDataEndTime:
-          type: string
-          description: Indicates the time reference in the dataset from which training data ends.
-          format: date-time
-        CreatedAt:
-          type: string
-          description: The time at which the model was created.
-          format: date-time
