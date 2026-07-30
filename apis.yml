@@ -5,7 +5,20 @@ description: >-
   abnormal patterns that signal potential failures. It helps you avoid unplanned equipment downtime by identifying
   potential equipment failures before they occur.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-lookout-for-equipment.png
 tags:
   - AWS
   - Equipment Monitoring
@@ -17,35 +30,33 @@ created: '2026-03-16'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-  - aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-api
-    name: Amazon Lookout for Equipment API
-    description: >-
-      The Amazon Lookout for Equipment API provides programmatic access to create and manage datasets, models, inference
-      schedulers, and labels for predictive maintenance of industrial equipment.
-    humanURL: https://aws.amazon.com/lookout-for-equipment/
-    baseURL: https://lookoutequipment.amazonaws.com
-    tags:
-      - Industrial IoT
-      - Machine Learning
-      - Predictive Maintenance
-    properties:
-      - type: Documentation
-        url: https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_Reference.html
-      - type: OpenAPI
-        url: https://api.apis.guru/v2/specs/amazonaws.com/lookoutequipment/2020-12-15/openapi.yaml
-      - type: GettingStarted
-        url: https://aws.amazon.com/lookout-for-equipment/getting-started/
-      - type: Pricing
-        url: https://aws.amazon.com/lookout-for-equipment/pricing/
-      - type: FAQ
-        url: https://aws.amazon.com/lookout-for-equipment/faqs/
-      - type: JSONSchema
-        url: json-schema/amazon-lookout-for-equipment-dataset-schema.json
-      - type: JSONSchema
-        url: json-schema/amazon-lookout-for-equipment-model-schema.json
-      - type: JSONLD
-        url: json-ld/amazon-lookout-for-equipment-context.jsonld
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-datasets-api
+  name: Amazon Lookout for Equipment Datasets API
+  description: Equipment sensor dataset management
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Datasets
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-datasets-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_Reference.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/lookout-for-equipment/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/lookout-for-equipment/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/lookout-for-equipment/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-dataset-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-model-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-lookout-for-equipment-context.jsonld
 common:
+  - type: PostmanWorkspace
+    url: https://www.postman.com/kinlaneapi/amazon-lookout-for-equipment/overview
   - type: AgenticAccess
     url: agentic-access/amazon-lookout-for-equipment-agentic-access.yml
   - type: TrustCenter
