@@ -1,0 +1,14 @@
+{
+  "provider": "amazon-lookout-for-equipment",
+  "sources": [
+    "amazon-lookout-for-equipment-datasets-api-openapi.yml"
+  ],
+  "outputs": [
+    "amazon-lookout-for-equipment-datasets-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

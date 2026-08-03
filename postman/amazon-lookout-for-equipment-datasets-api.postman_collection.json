@@ -1,0 +1,1504 @@
+{
+  "info": {
+    "_postman_id": "733cf028-4b98-4130-9a36-ea09bd7fbc04",
+    "name": "Amazon Lookout for Equipment Datasets API",
+    "description": "The Amazon Lookout for Equipment API provides programmatic access to manage Lookout for Equipment resources.\n\nContact Support:\n Name: AWS Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T00:47:37.000Z",
+    "updatedAt": "2026-07-28T00:47:37.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-733cf028-4b98-4130-9a36-ea09bd7fbc04"
+  },
+  "item": [
+    {
+      "name": "datasets",
+      "item": [
+        {
+          "name": "{DatasetName}",
+          "item": [
+            {
+              "name": "Amazon Lookout for Equipment Describe Dataset",
+              "id": "206baf18-da20-4c92-a3e7-c86f404dd106",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/datasets/:DatasetName",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "datasets",
+                    ":DatasetName"
+                  ],
+                  "variable": [
+                    {
+                      "id": "e71fb27d-3e81-4e06-a671-3675bf605d70",
+                      "key": "DatasetName",
+                      "value": "<string>",
+                      "description": "(Required) The name of the dataset."
+                    }
+                  ]
+                },
+                "description": "Provides a JSON containing the overall information about a specific dataset."
+              },
+              "response": [
+                {
+                  "id": "bc4c5728-8b95-434c-8403-9d0238cd67d4",
+                  "name": "Success",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/datasets/:DatasetName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "datasets",
+                        ":DatasetName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "DatasetName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-bc4c5728-8b95-434c-8403-9d0238cd67d4"
+                },
+                {
+                  "id": "61875a92-90e2-40e7-a7a7-4c466c344520",
+                  "name": "Bad request",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/datasets/:DatasetName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "datasets",
+                        ":DatasetName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "DatasetName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-61875a92-90e2-40e7-a7a7-4c466c344520"
+                },
+                {
+                  "id": "732112e4-76b8-49f7-becc-19800f09db36",
+                  "name": "Access denied",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/datasets/:DatasetName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "datasets",
+                        ":DatasetName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "DatasetName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Forbidden",
+                  "code": 403,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-732112e4-76b8-49f7-becc-19800f09db36"
+                },
+                {
+                  "id": "00e50093-0fa2-49c2-84a3-71ff247b3521",
+                  "name": "Internal server error",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/datasets/:DatasetName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "datasets",
+                        ":DatasetName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "DatasetName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-00e50093-0fa2-49c2-84a3-71ff247b3521"
+                }
+              ],
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-206baf18-da20-4c92-a3e7-c86f404dd106"
+            },
+            {
+              "name": "Amazon Lookout for Equipment Delete Dataset",
+              "id": "21652eb1-541d-4437-86f1-191fcc7d82e8",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/datasets/:DatasetName",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "datasets",
+                    ":DatasetName"
+                  ],
+                  "variable": [
+                    {
+                      "id": "c1fb3efb-0b0f-4f8a-ae5d-d1f141a980d0",
+                      "key": "DatasetName",
+                      "value": "<string>",
+                      "description": "(Required) The name of the dataset."
+                    }
+                  ]
+                },
+                "description": "Deletes a dataset and its associated data."
+              },
+              "response": [
+                {
+                  "id": "49a6f580-571e-473f-a2c7-eb6382cc2515",
+                  "name": "Success",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/datasets/:DatasetName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "datasets",
+                        ":DatasetName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "DatasetName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-49a6f580-571e-473f-a2c7-eb6382cc2515"
+                },
+                {
+                  "id": "e2bb0a83-9a10-4ee7-89b5-d74dfe168572",
+                  "name": "Bad request",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/datasets/:DatasetName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "datasets",
+                        ":DatasetName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "DatasetName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-e2bb0a83-9a10-4ee7-89b5-d74dfe168572"
+                },
+                {
+                  "id": "51755aca-5ed1-415b-af65-f9ecd65949d6",
+                  "name": "Access denied",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/datasets/:DatasetName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "datasets",
+                        ":DatasetName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "DatasetName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Forbidden",
+                  "code": 403,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-51755aca-5ed1-415b-af65-f9ecd65949d6"
+                },
+                {
+                  "id": "1f272871-340d-4355-b7b4-a833f43f37b0",
+                  "name": "Internal server error",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/datasets/:DatasetName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "datasets",
+                        ":DatasetName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "DatasetName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-1f272871-340d-4355-b7b4-a833f43f37b0"
+                }
+              ],
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-21652eb1-541d-4437-86f1-191fcc7d82e8"
+            }
+          ],
+          "id": "9db882be-3f3e-4ab9-8f39-323dd7ebd966",
+          "createdAt": "2026-07-28T00:47:38.000Z",
+          "updatedAt": "2026-07-28T00:47:38.000Z",
+          "uid": "35240-9db882be-3f3e-4ab9-8f39-323dd7ebd966"
+        },
+        {
+          "name": "Amazon Lookout for Equipment Create Dataset",
+          "id": "ca9cedf2-6dfa-4213-a53b-87f9c99235f1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/datasets",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "datasets"
+              ]
+            },
+            "description": "Creates a container (dataset) for a collection of data being ingested for analysis."
+          },
+          "response": [
+            {
+              "id": "b16fb278-e560-46bb-a4cf-b9194f4b3107",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/datasets",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "datasets"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-b16fb278-e560-46bb-a4cf-b9194f4b3107"
+            },
+            {
+              "id": "90f096dc-70ec-417a-9a23-7eb0b8eee376",
+              "name": "Bad request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/datasets",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "datasets"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-90f096dc-70ec-417a-9a23-7eb0b8eee376"
+            },
+            {
+              "id": "f641b83c-1166-488a-81b3-c44ce5b12879",
+              "name": "Access denied",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/datasets",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "datasets"
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-f641b83c-1166-488a-81b3-c44ce5b12879"
+            },
+            {
+              "id": "4e973c7f-a3b6-4367-ab76-044e277ee797",
+              "name": "Internal server error",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/datasets",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "datasets"
+                  ]
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-4e973c7f-a3b6-4367-ab76-044e277ee797"
+            }
+          ],
+          "createdAt": "2026-07-28T00:47:38.000Z",
+          "updatedAt": "2026-07-28T00:47:38.000Z",
+          "uid": "35240-ca9cedf2-6dfa-4213-a53b-87f9c99235f1"
+        },
+        {
+          "name": "Amazon Lookout for Equipment List Datasets",
+          "id": "4b9b6f66-d5d7-4512-93ad-cceb688b0d11",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/datasets",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "datasets"
+              ]
+            },
+            "description": "Lists all datasets currently available in your account."
+          },
+          "response": [
+            {
+              "id": "01cc793e-bf52-4171-937c-9f4faaeded66",
+              "name": "Success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/datasets",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "datasets"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-01cc793e-bf52-4171-937c-9f4faaeded66"
+            },
+            {
+              "id": "67eec7d6-707b-4bd1-8911-a6649128b031",
+              "name": "Bad request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/datasets",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "datasets"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-67eec7d6-707b-4bd1-8911-a6649128b031"
+            },
+            {
+              "id": "90ae8171-8ed0-4dff-bd75-8a374b9d4caf",
+              "name": "Access denied",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/datasets",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "datasets"
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-90ae8171-8ed0-4dff-bd75-8a374b9d4caf"
+            },
+            {
+              "id": "eb8ad882-1fc2-4200-8175-bf13a77d1619",
+              "name": "Internal server error",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/datasets",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "datasets"
+                  ]
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-eb8ad882-1fc2-4200-8175-bf13a77d1619"
+            }
+          ],
+          "createdAt": "2026-07-28T00:47:38.000Z",
+          "updatedAt": "2026-07-28T00:47:38.000Z",
+          "uid": "35240-4b9b6f66-d5d7-4512-93ad-cceb688b0d11"
+        }
+      ],
+      "id": "6ebb475e-daa8-4cd9-be7e-782d728f38c2",
+      "createdAt": "2026-07-28T00:47:38.000Z",
+      "updatedAt": "2026-07-28T00:47:38.000Z",
+      "uid": "35240-6ebb475e-daa8-4cd9-be7e-782d728f38c2"
+    },
+    {
+      "name": "models",
+      "item": [
+        {
+          "name": "{ModelName}",
+          "item": [
+            {
+              "name": "Amazon Lookout for Equipment Describe Model",
+              "id": "49ea3655-d7b3-4758-a250-bfda6e8e6d91",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/models/:ModelName",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "models",
+                    ":ModelName"
+                  ],
+                  "variable": [
+                    {
+                      "id": "7e33b014-01bb-4658-ad48-475a5007c1ba",
+                      "key": "ModelName",
+                      "value": "<string>",
+                      "description": "(Required) The name of the machine learning model."
+                    }
+                  ]
+                },
+                "description": "Provides a JSON containing the overall information about a specific ML model."
+              },
+              "response": [
+                {
+                  "id": "0992be07-6dcf-4326-8626-40474a86b983",
+                  "name": "Success",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/models/:ModelName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "models",
+                        ":ModelName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "ModelName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-0992be07-6dcf-4326-8626-40474a86b983"
+                },
+                {
+                  "id": "3247f7df-bd40-4b75-97a2-9d18338a5a02",
+                  "name": "Bad request",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/models/:ModelName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "models",
+                        ":ModelName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "ModelName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-3247f7df-bd40-4b75-97a2-9d18338a5a02"
+                },
+                {
+                  "id": "10556ce9-1dcb-4427-a278-d0417962d775",
+                  "name": "Access denied",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/models/:ModelName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "models",
+                        ":ModelName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "ModelName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Forbidden",
+                  "code": 403,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-10556ce9-1dcb-4427-a278-d0417962d775"
+                },
+                {
+                  "id": "73a4363e-1598-4402-ba74-254d3d1d58ef",
+                  "name": "Internal server error",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/models/:ModelName",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "models",
+                        ":ModelName"
+                      ],
+                      "variable": [
+                        {
+                          "key": "ModelName"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-73a4363e-1598-4402-ba74-254d3d1d58ef"
+                }
+              ],
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-49ea3655-d7b3-4758-a250-bfda6e8e6d91"
+            }
+          ],
+          "id": "80d902cb-fdea-46c0-87c9-787878d9c95d",
+          "createdAt": "2026-07-28T00:47:38.000Z",
+          "updatedAt": "2026-07-28T00:47:38.000Z",
+          "uid": "35240-80d902cb-fdea-46c0-87c9-787878d9c95d"
+        },
+        {
+          "name": "Amazon Lookout for Equipment Create Model",
+          "id": "88621c6c-e316-4bbc-8521-168ed8ada8e9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/models",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "models"
+              ]
+            },
+            "description": "Creates an ML model for data inference."
+          },
+          "response": [
+            {
+              "id": "f4007c46-f273-47be-a661-278e5b417b2e",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/models",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "models"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-f4007c46-f273-47be-a661-278e5b417b2e"
+            },
+            {
+              "id": "56392233-d588-43e9-ba83-499d892863b5",
+              "name": "Bad request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/models",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "models"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-56392233-d588-43e9-ba83-499d892863b5"
+            },
+            {
+              "id": "a1093514-25b8-455d-bf7f-ae89a2343e1c",
+              "name": "Access denied",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/models",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "models"
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-a1093514-25b8-455d-bf7f-ae89a2343e1c"
+            },
+            {
+              "id": "3197abf4-8ee6-4886-9a15-3761b160e008",
+              "name": "Internal server error",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/models",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "models"
+                  ]
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-3197abf4-8ee6-4886-9a15-3761b160e008"
+            }
+          ],
+          "createdAt": "2026-07-28T00:47:38.000Z",
+          "updatedAt": "2026-07-28T00:47:38.000Z",
+          "uid": "35240-88621c6c-e316-4bbc-8521-168ed8ada8e9"
+        },
+        {
+          "name": "Amazon Lookout for Equipment List Models",
+          "id": "62e87e6b-0fd4-4c03-b085-f0ed679a3647",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/models",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "models"
+              ]
+            },
+            "description": "Generates a list of all models in the account, including model name and ARN."
+          },
+          "response": [
+            {
+              "id": "341e4881-92bd-453f-a348-71ff0e95d5b7",
+              "name": "Success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/models",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "models"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-341e4881-92bd-453f-a348-71ff0e95d5b7"
+            },
+            {
+              "id": "826a099e-0d5e-4055-8c7f-823e2010078c",
+              "name": "Bad request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/models",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "models"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-826a099e-0d5e-4055-8c7f-823e2010078c"
+            },
+            {
+              "id": "23bc9c8c-4ac2-4eae-8e9f-6bff8cc97f1a",
+              "name": "Access denied",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/models",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "models"
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-23bc9c8c-4ac2-4eae-8e9f-6bff8cc97f1a"
+            },
+            {
+              "id": "ff7ad199-af59-4afa-8ed5-50bd747af775",
+              "name": "Internal server error",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/models",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "models"
+                  ]
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-ff7ad199-af59-4afa-8ed5-50bd747af775"
+            }
+          ],
+          "createdAt": "2026-07-28T00:47:38.000Z",
+          "updatedAt": "2026-07-28T00:47:38.000Z",
+          "uid": "35240-62e87e6b-0fd4-4c03-b085-f0ed679a3647"
+        }
+      ],
+      "id": "1db5139e-be71-4717-8b0a-c5fb2a28d1b8",
+      "createdAt": "2026-07-28T00:47:38.000Z",
+      "updatedAt": "2026-07-28T00:47:38.000Z",
+      "uid": "35240-1db5139e-be71-4717-8b0a-c5fb2a28d1b8"
+    },
+    {
+      "name": "inference-schedulers",
+      "item": [
+        {
+          "name": "{InferenceSchedulerName}",
+          "item": [
+            {
+              "name": "start",
+              "item": [
+                {
+                  "name": "Amazon Lookout for Equipment Start Inference Scheduler",
+                  "id": "40dab92b-80fe-4df6-bd69-fbb6109550b6",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/inference-schedulers/:InferenceSchedulerName/start",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "inference-schedulers",
+                        ":InferenceSchedulerName",
+                        "start"
+                      ],
+                      "variable": [
+                        {
+                          "id": "dfe2bf03-1ee7-4e9b-8dcd-dbb91999d900",
+                          "key": "InferenceSchedulerName",
+                          "value": "<string>",
+                          "description": "(Required) The name of the inference scheduler."
+                        }
+                      ]
+                    },
+                    "description": "Starts an inference scheduler."
+                  },
+                  "response": [
+                    {
+                      "id": "59400ab9-45f4-43f3-ab81-dd80d0136ba9",
+                      "name": "Success",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "description": "Added as a part of security scheme: apikey",
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/inference-schedulers/:InferenceSchedulerName/start",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "inference-schedulers",
+                            ":InferenceSchedulerName",
+                            "start"
+                          ],
+                          "variable": [
+                            {
+                              "key": "InferenceSchedulerName"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": null,
+                      "createdAt": "2026-07-28T00:47:38.000Z",
+                      "updatedAt": "2026-07-28T00:47:38.000Z",
+                      "uid": "35240-59400ab9-45f4-43f3-ab81-dd80d0136ba9"
+                    },
+                    {
+                      "id": "9eb77329-6742-423a-b858-c50054102ecc",
+                      "name": "Bad request",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "description": "Added as a part of security scheme: apikey",
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/inference-schedulers/:InferenceSchedulerName/start",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "inference-schedulers",
+                            ":InferenceSchedulerName",
+                            "start"
+                          ],
+                          "variable": [
+                            {
+                              "key": "InferenceSchedulerName"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": null,
+                      "createdAt": "2026-07-28T00:47:38.000Z",
+                      "updatedAt": "2026-07-28T00:47:38.000Z",
+                      "uid": "35240-9eb77329-6742-423a-b858-c50054102ecc"
+                    },
+                    {
+                      "id": "e8f0fbdd-ff6a-4c13-9c27-6524a3000c84",
+                      "name": "Access denied",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "description": "Added as a part of security scheme: apikey",
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/inference-schedulers/:InferenceSchedulerName/start",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "inference-schedulers",
+                            ":InferenceSchedulerName",
+                            "start"
+                          ],
+                          "variable": [
+                            {
+                              "key": "InferenceSchedulerName"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Forbidden",
+                      "code": 403,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": null,
+                      "createdAt": "2026-07-28T00:47:38.000Z",
+                      "updatedAt": "2026-07-28T00:47:38.000Z",
+                      "uid": "35240-e8f0fbdd-ff6a-4c13-9c27-6524a3000c84"
+                    },
+                    {
+                      "id": "7d73f1fd-add2-4ef7-a3b8-a40f2636211a",
+                      "name": "Internal server error",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "description": "Added as a part of security scheme: apikey",
+                            "key": "Authorization",
+                            "value": "<API Key>"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/inference-schedulers/:InferenceSchedulerName/start",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "inference-schedulers",
+                            ":InferenceSchedulerName",
+                            "start"
+                          ],
+                          "variable": [
+                            {
+                              "key": "InferenceSchedulerName"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Internal Server Error",
+                      "code": 500,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": null,
+                      "createdAt": "2026-07-28T00:47:38.000Z",
+                      "updatedAt": "2026-07-28T00:47:38.000Z",
+                      "uid": "35240-7d73f1fd-add2-4ef7-a3b8-a40f2636211a"
+                    }
+                  ],
+                  "createdAt": "2026-07-28T00:47:38.000Z",
+                  "updatedAt": "2026-07-28T00:47:38.000Z",
+                  "uid": "35240-40dab92b-80fe-4df6-bd69-fbb6109550b6"
+                }
+              ],
+              "id": "86d6bb95-9032-4347-a1d3-fecec80332c5",
+              "createdAt": "2026-07-28T00:47:38.000Z",
+              "updatedAt": "2026-07-28T00:47:38.000Z",
+              "uid": "35240-86d6bb95-9032-4347-a1d3-fecec80332c5"
+            }
+          ],
+          "id": "957ecf08-0a74-44f0-9a75-8b950995a532",
+          "createdAt": "2026-07-28T00:47:38.000Z",
+          "updatedAt": "2026-07-28T00:47:38.000Z",
+          "uid": "35240-957ecf08-0a74-44f0-9a75-8b950995a532"
+        }
+      ],
+      "id": "93746cf1-f74b-41cd-95ea-8652075e7a06",
+      "createdAt": "2026-07-28T00:47:38.000Z",
+      "updatedAt": "2026-07-28T00:47:38.000Z",
+      "uid": "35240-93746cf1-f74b-41cd-95ea-8652075e7a06"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://lookoutequipment.us-east-1.amazonaws.com"
+    }
+  ]
+}
