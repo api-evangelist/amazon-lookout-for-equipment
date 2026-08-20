@@ -23,6 +23,12 @@ tags:
   - AWS
   - Equipment Monitoring
   - Industrial IoT
+  - Machine-Learning
+  - Predictive Maintenance
+tags_raw:
+  - AWS
+  - Equipment Monitoring
+  - Industrial IoT
   - Machine Learning
   - Predictive Maintenance
 url: https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/apis.yml
