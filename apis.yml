@@ -74,6 +74,9 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-lookout-for-equipment-context.jsonld
 common:
+- type: CapabilityMap
+  url: capabilities/amazon-lookout-for-equipment-capability-edges.yml
+  name: Amazon Lookout for Equipment Business Capability Map
 - type: Website
   url: https://aws.amazon.com/lookout-for-equipment/
 - type: PostmanWorkspace
