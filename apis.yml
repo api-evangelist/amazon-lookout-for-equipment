@@ -74,6 +74,8 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-lookout-for-equipment-context.jsonld
 common:
+- type: Plans
+  url: plans/amazon-lookout-for-equipment-plans-pricing.yml
 - type: CapabilityMap
   url: capabilities/amazon-lookout-for-equipment-capability-edges.yml
   name: Amazon Lookout for Equipment Business Capability Map
