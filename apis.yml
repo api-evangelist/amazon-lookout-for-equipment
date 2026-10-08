@@ -74,6 +74,12 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-lookout-for-equipment-context.jsonld
 common:
+- type: Pricing
+  url: https://aws.amazon.com/lookout-for-equipment/pricing/
+- type: RateLimits
+  url: rate-limits/amazon-lookout-for-equipment-rate-limits.yml
+- type: FinOps
+  url: finops/amazon-lookout-for-equipment-finops.yml
 - type: Plans
   url: plans/amazon-lookout-for-equipment-plans-pricing.yml
 - type: CapabilityMap
