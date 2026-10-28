@@ -1,4 +1,4 @@
-# Amazon Lookout for Equipment (amazon-lookout-for-equipment)
+# Amazon Lookout for Equipment
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,76 +66,174 @@
 
 Amazon Lookout for Equipment uses machine learning to analyze sensor data from your industrial equipment and detect abnormal patterns that signal potential failures. It helps you avoid unplanned equipment downtime by identifying potential equipment failures before they occur.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/apis.yml)
+**Areas:** AWS · Equipment Monitoring · Industrial IoT · Machine Learning · Predictive Maintenance
 
-## Scope
+## Amazon Lookout for Equipment on APIs.io
 
-- **Type:** Index
+Everything profiled for Amazon Lookout for Equipment is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amazon-lookout-for-equipment/](https://apis.io/providers/amazon-lookout-for-equipment/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (9)
 
-- AWS
-- Equipment Monitoring
-- Industrial IoT
-- Machine Learning
-- Predictive Maintenance
+- [Amazon Lookout for Equipment Datasets API](https://apis.io/apis/amazon-lookout-for-equipment/amazon-lookout-for-equipment-datasets-api/) — Equipment sensor dataset management
+- [Amazon Lookout for Equipment Lookout For Equipment Data Ingestion Job API](https://apis.io/apis/amazon-lookout-for-equipment/amazon-lookout-for-equipment-data-ingestion-job-api/) — The Lookout For Equipment Data Ingestion Job API from Amazon Lookout for Equipment — 3 operation(s) for lookout for equipment data ingestion job.
+- [Amazon Lookout for Equipment Lookout For Equipment Inference Scheduler API](https://apis.io/apis/amazon-lookout-for-equipment/amazon-lookout-for-equipment-inference-scheduler-api/) — The Lookout For Equipment Inference Scheduler API from Amazon Lookout for Equipment — 6 operation(s) for lookout for equipment inference scheduler.
+- [Amazon Lookout for Equipment Lookout For Equipment Label API](https://apis.io/apis/amazon-lookout-for-equipment/amazon-lookout-for-equipment-label-api/) — The Lookout For Equipment Label API from Amazon Lookout for Equipment — 4 operation(s) for lookout for equipment label.
+- [Amazon Lookout for Equipment Lookout For Equipment Label Group API](https://apis.io/apis/amazon-lookout-for-equipment/amazon-lookout-for-equipment-label-group-api/) — The Lookout For Equipment Label Group API from Amazon Lookout for Equipment — 5 operation(s) for lookout for equipment label group.
+- [Amazon Lookout for Equipment Lookout For Equipment Model Version API](https://apis.io/apis/amazon-lookout-for-equipment/amazon-lookout-for-equipment-model-version-api/) — The Lookout For Equipment Model Version API from Amazon Lookout for Equipment — 3 operation(s) for lookout for equipment model version.
+- [Amazon Lookout for Equipment Lookout For Equipment Operations API](https://apis.io/apis/amazon-lookout-for-equipment/amazon-lookout-for-equipment-operations-api/) — The Lookout For Equipment Operations API from Amazon Lookout for Equipment — 9 operation(s) for lookout for equipment operations.
+- [Amazon Lookout for Equipment Lookout For Equipment Resource Policy API](https://apis.io/apis/amazon-lookout-for-equipment/amazon-lookout-for-equipment-resource-policy-api/) — The Lookout For Equipment Resource Policy API from Amazon Lookout for Equipment — 3 operation(s) for lookout for equipment resource policy.
+- [Amazon Lookout for Equipment Lookout For Equipment Retraining Scheduler API](https://apis.io/apis/amazon-lookout-for-equipment/amazon-lookout-for-equipment-retraining-scheduler-api/) — The Lookout For Equipment Retraining Scheduler API from Amazon Lookout for Equipment — 7 operation(s) for lookout for equipment retraining scheduler.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Amazon Lookout for Equipment API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Amazon Lookout for Equipment API provides programmatic access to create and manage datasets, models, inference schedulers, and labels for predictive maintenance of industrial equipment.
+- [Amazon Lookout For Equipment Agentic Access](https://apis.io/agentic-access/amazon-lookout-for-equipment/amazon-lookout-for-equipment-agentic-access/)
 
-- **Human URL:** [https://aws.amazon.com/lookout-for-equipment/](https://aws.amazon.com/lookout-for-equipment/)
-- **Base URL:** `https://lookoutequipment.amazonaws.com`
+#### JSON Schema (2)
 
-#### Tags
+The data models the API reads and writes.
 
-- Industrial IoT
-- Machine Learning
-- Predictive Maintenance
+- [Dataset](https://apis.io/schemas/amazon-lookout-for-equipment/amazon-lookout-for-equipment-dataset/)
+- [Model](https://apis.io/schemas/amazon-lookout-for-equipment/amazon-lookout-for-equipment-model/)
 
-#### Properties
+#### JSON Structure (2)
 
-- [Documentation](https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_Reference.html)
-- [OpenAPI](https://api.apis.guru/v2/specs/amazonaws.com/lookoutequipment/2020-12-15/openapi.yaml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Getting Started](https://aws.amazon.com/lookout-for-equipment/getting-started/)
-- [Pricing](https://aws.amazon.com/lookout-for-equipment/pricing/)
-- [F A Q](https://aws.amazon.com/lookout-for-equipment/faqs/)
-- [JSON Schema](json-schema/amazon-lookout-for-equipment-dataset-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/amazon-lookout-for-equipment-model-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON-LD](json-ld/amazon-lookout-for-equipment-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Postman Collection](collections/amazon-lookout-for-equipment.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/amazon-lookout-for-equipment.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Data models expressed in JSON Structure.
 
-## Common Properties
+- [Amazon Lookout For Equipment Dataset Structure](https://apis.io/json-structure/amazon-lookout-for-equipment/amazon-lookout-for-equipment-dataset-structure/)
+- [Amazon Lookout For Equipment Model Structure](https://apis.io/json-structure/amazon-lookout-for-equipment/amazon-lookout-for-equipment-model-structure/)
 
-- [Portal](https://aws.amazon.com/lookout-for-equipment/)
-- [Portal](https://aws.amazon.com/lookout-for-equipment/)
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Amazon Lookout For Equipment Context](https://apis.io/jsonld/amazon-lookout-for-equipment/amazon-lookout-for-equipment-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Amazon Lookout For Equipment Vocabulary](https://apis.io/vocabularies/amazon-lookout-for-equipment/amazon-lookout-for-equipment-vocabulary/)
+
+#### Examples (2)
+
+Example requests and responses.
+
+- [Amazon Lookout For Equipment Dataset Example](https://apis.io/examples/amazon-lookout-for-equipment/amazon-lookout-for-equipment-dataset-example/)
+- [Amazon Lookout For Equipment Model Example](https://apis.io/examples/amazon-lookout-for-equipment/amazon-lookout-for-equipment-model-example/)
+
+#### Collections (3)
+
+Postman and Open Collection request collections.
+
+- [Amazon Lookout for Equipment API](https://apis.io/collections/amazon-lookout-for-equipment/open-amazon-lookout-for-equipment/)
+- [Amazon Lookout for Equipment Datasets API](https://apis.io/collections/amazon-lookout-for-equipment/open-amazon-lookout-for-equipment-datasets-api/)
+- [Amazon Lookout for Equipment Datasets API](https://apis.io/collections/amazon-lookout-for-equipment/postman-amazon-lookout-for-equipment-datasets-api/)
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Amazon Lookout for Equipment — jsonschema rules](https://apis.io/rules/amazon-lookout-for-equipment/amazon-lookout-for-equipment-jsonschema-spectral-rules/)
+- [Amazon Lookout for Equipment API Rules](https://apis.io/rules/amazon-lookout-for-equipment/amazon-lookout-for-equipment-spectral-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Amazon Lookout For Equipment Authentication](https://apis.io/security/amazon-lookout-for-equipment/amazon-lookout-for-equipment-authentication/)
+- [Amazon Lookout For Equipment Domain Security](https://apis.io/security/amazon-lookout-for-equipment/amazon-lookout-for-equipment-domain-security/)
+- [Amazon Lookout For Equipment Trust Center](https://apis.io/security/amazon-lookout-for-equipment/amazon-lookout-for-equipment-trust-center/)
+- [Amazon Lookout For Equipment Vulnerability Disclosure](https://apis.io/security/amazon-lookout-for-equipment/amazon-lookout-for-equipment-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Amazon Lookout For Equipment Plans Pricing](https://apis.io/plans/amazon-lookout-for-equipment/amazon-lookout-for-equipment-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Amazon Lookout For Equipment Rate Limits](https://apis.io/rate-limits/amazon-lookout-for-equipment/amazon-lookout-for-equipment-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Amazon Lookout For Equipment Finops](https://apis.io/finops/amazon-lookout-for-equipment/amazon-lookout-for-equipment-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://aws.amazon.com/lookout-for-equipment/)
 - [Documentation](https://docs.aws.amazon.com/lookout-for-equipment/)
-- [Terms of Service](https://aws.amazon.com/service-terms/)
-- [Privacy Policy](https://aws.amazon.com/privacy/)
+- [Pricing](https://aws.amazon.com/lookout-for-equipment/pricing/)
 - [Support](https://aws.amazon.com/premiumsupport/)
 - [Blog](https://aws.amazon.com/blogs/machine-learning/tag/amazon-lookout-for-equipment/)
-- [GitHub Organization](https://github.com/aws)
-- [Console](https://console.aws.amazon.com/lookoutequipment/)
-- [Sign Up](https://portal.aws.amazon.com/billing/signup)
-- [Login](https://signin.aws.amazon.com/)
-- [Status Page](https://health.aws.amazon.com/health/status)
-- [Contact](https://aws.amazon.com/contact-us/)
-- [Features](undefined)
-- [Use Cases](undefined)
-- [Integrations](undefined)
-- [Spectral Rules](rules/amazon-lookout-for-equipment-spectral-rules.yml)
-- [Vocabulary](vocabulary/amazon-lookout-for-equipment-vocabulary.yaml)
-- [Integrations](https://aws.amazon.com/marketplace)
+- [Terms of service](https://aws.amazon.com/service-terms/)
+- [Privacy policy](https://aws.amazon.com/privacy/)
+- [GitHub](https://github.com/aws)
+- [Status](https://health.aws.amazon.com/health/status)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 55.3** — strong · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 61.0 |
+| Contract governance | 27.3 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 44.0 |
+| Access clarity | 77.6 |
+
+**Agent readiness 19.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 32.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amazon-lookout-for-equipment/](https://apis.io/providers/amazon-lookout-for-equipment/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amazon Lookout for Equipment: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amazon-lookout-for-equipment/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
