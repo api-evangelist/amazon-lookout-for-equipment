@@ -1,0 +1,80 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://aws.amazon.com/lookout-for-equipment/pricing/
+sources:
+- https://aws.amazon.com/lookout-for-equipment/pricing/
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: usage-other
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Usage-based pricing for ingestion, training, and inference hours, plus a first-month free trial.
+  Volume discounts above 100 assets require contacting an AWS account manager.
+plan_count: 3
+currency: USD
+plans:
+- name: Data Ingestion
+  price_text: $0.20 per GB
+  price: 0.2
+  currency: USD
+  period: per-use
+  unit: GB ingested
+  included_quota: 'Free trial: Up to 50 GB data ingestion in first month'
+- name: Model Training
+  price_text: $0.24 per training hour
+  price: 0.24
+  currency: USD
+  period: per-use
+  unit: training hour
+  included_quota: 'Free trial: Up to 250 training hours'
+- name: Scheduled Inference
+  price_text: $0.25 per inference hour
+  price: 0.25
+  currency: USD
+  period: per-use
+  unit: inference hour
+  included_quota: 'Free trial: Up to 168 hours of scheduled inference'
+rate_limit_statements:
+- you can use data from up to 300 sensors to train one model
+- All model training jobs are charged for a minimum of one hour of elapsed time and then prorated to the
+  nearest second
+x-canonical:
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
+  models:
+  - hybrid
+  units:
+  - compute
+  - data
+  plans:
+  - name: Data Ingestion
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - data
+    periods:
+    - other
+  - name: Model Training
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Scheduled Inference
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other

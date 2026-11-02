@@ -1,0 +1,276 @@
+aid: amazon-lookout-for-equipment
+name: Amazon Lookout for Equipment
+description: Amazon Lookout for Equipment uses machine learning to analyze sensor data from your industrial
+  equipment and detect abnormal patterns that signal potential failures. It helps you avoid unplanned
+  equipment downtime by identifying potential equipment failures before they occur.
+type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: medium
+  source:
+  - plans
+  - authentication
+  - security
+  generated: '2026-09-03'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-lookout-for-equipment.png
+tags:
+- Amazon Web Services
+- Equipment Monitoring
+- Industrial IoT
+- Machine Learning
+- Predictive Maintenance
+tags_raw:
+- AWS
+- Equipment Monitoring
+- Industrial IoT
+- Machine Learning
+- Predictive Maintenance
+- Machine-Learning
+url: https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/apis.yml
+created: '2026-03-16'
+modified: '2026-09-16'
+specificationVersion: '0.23'
+apis:
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-datasets-api
+  name: Amazon Lookout for Equipment Datasets API
+  description: Equipment sensor dataset management
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Datasets
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-datasets-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_Reference.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/lookout-for-equipment/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/lookout-for-equipment/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/lookout-for-equipment/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-dataset-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-model-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-lookout-for-equipment-context.jsonld
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-data-ingestion-job-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Data Ingestion Job API
+  description: >-
+    The Lookout For Equipment Data Ingestion Job API from Amazon Lookout for Equipment — 3 operation(s)
+    for lookout for equipment data ingestion job.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Data Ingestion Job
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-data-ingestion-job-api-openapi.yml
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-inference-scheduler-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Inference Scheduler API
+  description: >-
+    The Lookout For Equipment Inference Scheduler API from Amazon Lookout for Equipment — 6 operation(s)
+    for lookout for equipment inference scheduler.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Inference Scheduler
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-inference-scheduler-api-openapi.yml
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-label-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Label API
+  description: >-
+    The Lookout For Equipment Label API from Amazon Lookout for Equipment — 4 operation(s) for lookout
+    for equipment label.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Label
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-label-api-openapi.yml
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-label-group-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Label Group API
+  description: >-
+    The Lookout For Equipment Label Group API from Amazon Lookout for Equipment — 5 operation(s) for lookout
+    for equipment label group.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Label Group
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-label-group-api-openapi.yml
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-model-version-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Model Version API
+  description: >-
+    The Lookout For Equipment Model Version API from Amazon Lookout for Equipment — 3 operation(s) for
+    lookout for equipment model version.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Model Version
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-model-version-api-openapi.yml
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-operations-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Operations API
+  description: >-
+    The Lookout For Equipment Operations API from Amazon Lookout for Equipment — 9 operation(s) for lookout
+    for equipment operations.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-operations-api-openapi.yml
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-resource-policy-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Resource Policy API
+  description: >-
+    The Lookout For Equipment Resource Policy API from Amazon Lookout for Equipment — 3 operation(s) for
+    lookout for equipment resource policy.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Resource Policy
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-resource-policy-api-openapi.yml
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-retraining-scheduler-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Retraining Scheduler API
+  description: >-
+    The Lookout For Equipment Retraining Scheduler API from Amazon Lookout for Equipment — 7 operation(s)
+    for lookout for equipment retraining scheduler.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Retraining Scheduler
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-retraining-scheduler-api-openapi.yml
+common:
+- type: Pricing
+  url: https://aws.amazon.com/lookout-for-equipment/pricing/
+- type: RateLimits
+  url: rate-limits/amazon-lookout-for-equipment-rate-limits.yml
+- type: FinOps
+  url: finops/amazon-lookout-for-equipment-finops.yml
+- type: Plans
+  url: plans/amazon-lookout-for-equipment-plans-pricing.yml
+- type: CapabilityMap
+  url: capabilities/amazon-lookout-for-equipment-capability-edges.yml
+  name: Amazon Lookout for Equipment Business Capability Map
+- type: Website
+  url: https://aws.amazon.com/lookout-for-equipment/
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-lookout-for-equipment/overview
+- type: AgenticAccess
+  url: agentic-access/amazon-lookout-for-equipment-agentic-access.yml
+- type: TrustCenter
+  url: security/amazon-lookout-for-equipment-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-lookout-for-equipment-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-lookout-for-equipment-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-lookout-for-equipment-authentication.yml
+- type: Portal
+  url: https://aws.amazon.com/lookout-for-equipment/
+- type: Portal
+  url: https://aws.amazon.com/lookout-for-equipment/
+- type: Documentation
+  url: https://docs.aws.amazon.com/lookout-for-equipment/
+- type: TermsOfService
+  url: https://aws.amazon.com/service-terms/
+- type: PrivacyPolicy
+  url: https://aws.amazon.com/privacy/
+- type: Support
+  url: https://aws.amazon.com/premiumsupport/
+- type: Blog
+  url: https://aws.amazon.com/blogs/machine-learning/tag/amazon-lookout-for-equipment/
+- type: GitHubOrganization
+  url: https://github.com/aws
+- type: Console
+  url: https://console.aws.amazon.com/lookoutequipment/
+- type: Signup
+  url: https://portal.aws.amazon.com/billing/signup
+- type: Login
+  url: https://signin.aws.amazon.com/
+- type: StatusPage
+  url: https://health.aws.amazon.com/health/status
+- type: Contact
+  url: https://aws.amazon.com/contact-us/
+- type: Features
+  data:
+  - name: Anomaly Detection
+    description: Detect abnormal equipment behavior using ML models trained on equipment sensor data.
+  - name: Predictive Maintenance
+    description: Predict equipment failures before they occur to reduce unplanned downtime.
+  - name: No ML Expertise Required
+    description: Automatically build ML models from historical sensor data without data science expertise.
+  - name: Multi-Sensor Support
+    description: Analyze data from hundreds of sensors simultaneously to detect complex failure patterns.
+  - name: Real-Time Inference
+    description: Run continuous inference on streaming sensor data for real-time failure detection.
+- type: UseCases
+  data:
+  - name: Manufacturing Predictive Maintenance
+    description: Detect early warning signs of equipment failures in manufacturing machinery.
+  - name: Energy Sector Monitoring
+    description: Monitor industrial equipment in power plants, wind turbines, and oil refineries.
+  - name: Mining Equipment Health
+    description: Track the health of heavy mining equipment to prevent costly breakdowns.
+  - name: HVAC System Monitoring
+    description: Detect anomalies in HVAC systems to prevent equipment failures in buildings.
+- type: Integrations
+  data:
+  - name: Amazon S3
+    description: Store and access equipment sensor data in S3 for model training and inference.
+  - name: AWS IoT SiteWise
+    description: Collect and organize equipment sensor data with IoT SiteWise and analyze with Lookout.
+  - name: Amazon Kinesis Data Streams
+    description: Stream real-time sensor data from equipment to Lookout for Equipment.
+  - name: AWS IoT Core
+    description: Connect industrial equipment to AWS via IoT Core for data ingestion.
+- type: SpectralRules
+  url: rules/amazon-lookout-for-equipment-spectral-rules.yml
+- type: Vocabulary
+  url: vocabulary/amazon-lookout-for-equipment-vocabulary.yaml
+- type: Integrations
+  url: https://aws.amazon.com/marketplace
+integrations:
+- name: Sign in
+- name: Agent Mode
+- name: Why AWS Marketplace?
+- name: Get started in AWS Marketplace
+- name: Industry
+- name: Resources
+- name: Become a Channel Partner
+- name: Sell in AWS Marketplace
+- name: Manage Your Account
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-parent: amazon-web-services
+x-relationship: product
