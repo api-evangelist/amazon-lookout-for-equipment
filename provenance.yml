@@ -11,6 +11,9 @@ artifacts:
   capabilities/amazon-lookout-for-equipment-capability-edges.yml:
     method: unknown
     evidence: no authorship recorded
+  certification/status.yml:
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-lookout-for-equipment-datasets-api.opencollection.json:
     method: derived
     evidence: openapi/amazon-lookout-for-equipment-datasets-api
@@ -23,6 +26,18 @@ artifacts:
   collections/amazon-lookout-for-equipment.postman_collection.json:
     method: derived
     evidence: openapi/amazon-lookout-for-equipment
+  compliance/amazon-lookout-for-equipment-compliance.yml:
+    method: harvested
+    evidence: declared in the artifact
+  conformance/amazon-lookout-for-equipment-conformance.yml:
+    method: derived
+    evidence: declared in the artifact
+  data-model/amazon-lookout-for-equipment-data-model.yml:
+    method: derived
+    evidence: declared in the artifact
+  errors/amazon-lookout-for-equipment-problem-types.yml:
+    method: derived
+    evidence: declared in the artifact
   examples/amazon-lookout-for-equipment-dataset-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -35,6 +50,9 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
+  hosts/amazon-lookout-for-equipment-hosts.yml:
+    method: derived
+    evidence: declared in the artifact
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
@@ -44,10 +62,151 @@ artifacts:
   json-ld/amazon-lookout-for-equipment-context.jsonld:
     method: unknown
     evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-create-inference-scheduler-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-create-inference-scheduler-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-create-label-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-create-label-group-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-create-label-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-create-retraining-scheduler-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
   json-schema/amazon-lookout-for-equipment-dataset-schema.json:
     method: unknown
     evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-delete-label-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-delete-resource-policy-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-data-ingestion-job-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-data-ingestion-job-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-inference-scheduler-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-label-group-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-label-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-label-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-model-version-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-model-version-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-resource-policy-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-resource-policy-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-describe-retraining-scheduler-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-import-model-version-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-import-model-version-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-data-ingestion-jobs-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-data-ingestion-jobs-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-inference-events-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-inference-executions-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-inference-executions-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-inference-schedulers-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-label-groups-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-label-groups-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-labels-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-labels-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-model-versions-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-model-versions-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-retraining-schedulers-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-retraining-schedulers-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-sensor-statistics-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-list-sensor-statistics-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
   json-schema/amazon-lookout-for-equipment-model-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-put-resource-policy-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-put-resource-policy-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-start-data-ingestion-job-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-start-data-ingestion-job-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-start-retraining-scheduler-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-stop-inference-scheduler-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-update-active-model-version-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-update-inference-scheduler-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-update-label-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-lookout-for-equipment-update-retraining-scheduler-request-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-structure/amazon-lookout-for-equipment-dataset-structure.json:
@@ -59,7 +218,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -128,6 +287,21 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  lifecycle/amazon-lookout-for-equipment-lifecycle.yml:
+    method: searched
+    evidence: declared in the artifact
+  llms/amazon-lookout-for-equipment-llms-provenance.yml:
+    method: unknown
+    evidence: no authorship recorded
+  llms/amazon-lookout-for-equipment-llms.txt:
+    method: unknown
+    evidence: no authorship recorded
+  mcp/amazon-lookout-for-equipment-mcp.yml:
+    method: derived
+    evidence: declared in the artifact
   openapi/_original/amazon-lookout-for-equipment-openapi.yml:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
@@ -159,16 +333,28 @@ artifacts:
   openapi/amazon-lookout-for-equipment-retraining-scheduler-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
+  packages/amazon-lookout-for-equipment-packages.yml:
+    method: unknown
+    evidence: no authorship recorded
+  patterns/amazon-lookout-for-equipment-patterns.yml:
+    method: derived
+    evidence: declared in the artifact
   plans/amazon-lookout-for-equipment-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
   postman/amazon-lookout-for-equipment-datasets-api.postman_collection.json:
     method: derived
     evidence: openapi/amazon-lookout-for-equipment-datasets-api
+  privacy/amazon-lookout-for-equipment-privacy-policy.yml:
+    method: harvested
+    evidence: declared in the artifact
   rate-limits/amazon-lookout-for-equipment-rate-limits.yml:
     method: generated
     evidence: declared in the artifact
   rules/amazon-lookout-for-equipment-jsonschema-spectral-rules.yml:
+    method: generated
+    evidence: declared in the artifact
+  rules/amazon-lookout-for-equipment-rules.yml:
     method: generated
     evidence: declared in the artifact
   rules/amazon-lookout-for-equipment-spectral-rules.yml:
@@ -187,8 +373,24 @@ artifacts:
     method: generated
     evidence: declared in the artifact
   smithy/lookoutequipment-2020-12-15.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/5ff5b20d1c425dffd72b38b9a8019ef65824f4fe/models/lookoutequipment/service/2020-12-15/lookoutequipment-2020-12-15.json
+      (sha256 823085bbc322, fetched 2026-11-11T11:39:19+00:00)
+  vendors/amazon-lookout-for-equipment-vendors.yml:
     method: unknown
     evidence: no authorship recorded
   vocabulary/amazon-lookout-for-equipment-vocabulary.yaml:
+    method: unknown
+    evidence: no authorship recorded
+  vocabulary/amazon-lookout-for-equipment-vocabulary.yml:
+    method: derived
+    evidence: declared in the artifact
+  well-known/amazon-lookout-for-equipment-midway-auth-openid-configuration.json:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-lookout-for-equipment-security.txt:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-lookout-for-equipment-well-known.yml:
     method: unknown
     evidence: no authorship recorded

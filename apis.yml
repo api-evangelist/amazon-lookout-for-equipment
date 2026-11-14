@@ -1,9 +1,12 @@
 aid: amazon-lookout-for-equipment
+
 name: Amazon Lookout for Equipment
-description: Amazon Lookout for Equipment uses machine learning to analyze sensor data from your industrial
-  equipment and detect abnormal patterns that signal potential failures. It helps you avoid unplanned
-  equipment downtime by identifying potential equipment failures before they occur.
+
+description: Amazon Lookout for Equipment uses machine learning to analyze sensor data from your industrial equipment and detect abnormal patterns
+  that signal potential failures. It helps you avoid unplanned equipment downtime by identifying potential equipment failures before they occur.
+
 type: Index
+
 deliveryModel:
   model: saas
   open_source: false
@@ -16,6 +19,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: paid
   onboarding: unknown
@@ -24,13 +28,15 @@ accessModel:
   public: false
   label: Paid
   confidence: medium
+  probe_state: none
   source:
   - plans
   - authentication
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-lookout-for-equipment.png
+
 tags:
 - Amazon Web Services
 - Equipment Monitoring
@@ -43,133 +49,66 @@ tags_raw:
 - Industrial IoT
 - Machine Learning
 - Predictive Maintenance
+
+tags_raw:
+- AWS
+- Equipment Monitoring
+- Industrial IoT
+- Machine Learning
+- Predictive Maintenance
 - Machine-Learning
+
 url: https://raw.githubusercontent.com/api-evangelist/amazon-lookout-for-equipment/refs/heads/main/apis.yml
+
 created: '2026-03-16'
-modified: '2026-09-16'
+
+modified: '2026-11-11'
+
 specificationVersion: '0.23'
-apis:
-- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-datasets-api
-  name: Amazon Lookout for Equipment Datasets API
-  description: Equipment sensor dataset management
-  humanURL: https://aws.amazon.com/lookout-for-equipment/
-  baseURL: https://lookoutequipment.amazonaws.com
-  tags:
-  - Datasets
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-lookout-for-equipment-datasets-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_Reference.html
-  - type: GettingStarted
-    url: https://aws.amazon.com/lookout-for-equipment/getting-started/
-  - type: Pricing
-    url: https://aws.amazon.com/lookout-for-equipment/pricing/
-  - type: FAQ
-    url: https://aws.amazon.com/lookout-for-equipment/faqs/
-  - type: JSONSchema
-    url: json-schema/amazon-lookout-for-equipment-dataset-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-lookout-for-equipment-model-schema.json
-  - type: JSONLD
-    url: json-ld/amazon-lookout-for-equipment-context.jsonld
-- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-data-ingestion-job-api
-  name: Amazon Lookout for Equipment Lookout For Equipment Data Ingestion Job API
-  description: >-
-    The Lookout For Equipment Data Ingestion Job API from Amazon Lookout for Equipment — 3 operation(s)
-    for lookout for equipment data ingestion job.
-  humanURL: https://aws.amazon.com/lookout-for-equipment/
-  baseURL: https://lookoutequipment.amazonaws.com
-  tags:
-  - Lookout For Equipment Data Ingestion Job
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-lookout-for-equipment-data-ingestion-job-api-openapi.yml
-- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-inference-scheduler-api
-  name: Amazon Lookout for Equipment Lookout For Equipment Inference Scheduler API
-  description: >-
-    The Lookout For Equipment Inference Scheduler API from Amazon Lookout for Equipment — 6 operation(s)
-    for lookout for equipment inference scheduler.
-  humanURL: https://aws.amazon.com/lookout-for-equipment/
-  baseURL: https://lookoutequipment.amazonaws.com
-  tags:
-  - Lookout For Equipment Inference Scheduler
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-lookout-for-equipment-inference-scheduler-api-openapi.yml
-- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-label-api
-  name: Amazon Lookout for Equipment Lookout For Equipment Label API
-  description: >-
-    The Lookout For Equipment Label API from Amazon Lookout for Equipment — 4 operation(s) for lookout
-    for equipment label.
-  humanURL: https://aws.amazon.com/lookout-for-equipment/
-  baseURL: https://lookoutequipment.amazonaws.com
-  tags:
-  - Lookout For Equipment Label
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-lookout-for-equipment-label-api-openapi.yml
-- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-label-group-api
-  name: Amazon Lookout for Equipment Lookout For Equipment Label Group API
-  description: >-
-    The Lookout For Equipment Label Group API from Amazon Lookout for Equipment — 5 operation(s) for lookout
-    for equipment label group.
-  humanURL: https://aws.amazon.com/lookout-for-equipment/
-  baseURL: https://lookoutequipment.amazonaws.com
-  tags:
-  - Lookout For Equipment Label Group
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-lookout-for-equipment-label-group-api-openapi.yml
-- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-model-version-api
-  name: Amazon Lookout for Equipment Lookout For Equipment Model Version API
-  description: >-
-    The Lookout For Equipment Model Version API from Amazon Lookout for Equipment — 3 operation(s) for
-    lookout for equipment model version.
-  humanURL: https://aws.amazon.com/lookout-for-equipment/
-  baseURL: https://lookoutequipment.amazonaws.com
-  tags:
-  - Lookout For Equipment Model Version
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-lookout-for-equipment-model-version-api-openapi.yml
-- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-operations-api
-  name: Amazon Lookout for Equipment Lookout For Equipment Operations API
-  description: >-
-    The Lookout For Equipment Operations API from Amazon Lookout for Equipment — 9 operation(s) for lookout
-    for equipment operations.
-  humanURL: https://aws.amazon.com/lookout-for-equipment/
-  baseURL: https://lookoutequipment.amazonaws.com
-  tags:
-  - Lookout For Equipment Operations
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-lookout-for-equipment-operations-api-openapi.yml
-- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-resource-policy-api
-  name: Amazon Lookout for Equipment Lookout For Equipment Resource Policy API
-  description: >-
-    The Lookout For Equipment Resource Policy API from Amazon Lookout for Equipment — 3 operation(s) for
-    lookout for equipment resource policy.
-  humanURL: https://aws.amazon.com/lookout-for-equipment/
-  baseURL: https://lookoutequipment.amazonaws.com
-  tags:
-  - Lookout For Equipment Resource Policy
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-lookout-for-equipment-resource-policy-api-openapi.yml
-- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-retraining-scheduler-api
-  name: Amazon Lookout for Equipment Lookout For Equipment Retraining Scheduler API
-  description: >-
-    The Lookout For Equipment Retraining Scheduler API from Amazon Lookout for Equipment — 7 operation(s)
-    for lookout for equipment retraining scheduler.
-  humanURL: https://aws.amazon.com/lookout-for-equipment/
-  baseURL: https://lookoutequipment.amazonaws.com
-  tags:
-  - Lookout For Equipment Retraining Scheduler
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-lookout-for-equipment-retraining-scheduler-api-openapi.yml
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+
 common:
+- type: Spectral
+  url: rules/amazon-lookout-for-equipment-spectral-rules.yml
+- type: Spectral
+  url: rules/amazon-lookout-for-equipment-rules.yml
+- type: Spectral
+  url: rules/amazon-lookout-for-equipment-jsonschema-spectral-rules.yml
+- type: Vocabulary
+  url: vocabulary/amazon-lookout-for-equipment-vocabulary.yml
+- type: DataModel
+  url: data-model/amazon-lookout-for-equipment-data-model.yml
+- type: Compliance
+  url: https://aws.amazon.com/compliance/
+- type: Deprecation
+  url: https://aws.amazon.com/lookout-for-equipment/
+- type: Lifecycle
+  url: lifecycle/amazon-lookout-for-equipment-lifecycle.yml
+- type: ErrorCatalog
+  url: errors/amazon-lookout-for-equipment-problem-types.yml
+- type: Conformance
+  url: conformance/amazon-lookout-for-equipment-conformance.yml
+- type: LLMsTxt
+  url: llms/amazon-lookout-for-equipment-llms.txt
+- type: SecurityTxt
+  url: well-known/amazon-lookout-for-equipment-security.txt
+- type: WellKnown
+  url: well-known/amazon-lookout-for-equipment-well-known.yml
+- type: Hosts
+  url: hosts/amazon-lookout-for-equipment-hosts.yml
+- type: Vendors
+  url: vendors/amazon-lookout-for-equipment-vendors.yml
+- type: Security
+  url: https://aws.amazon.com/security/?nc2=h_dsc_aa_sec
+- type: Sandbox
+  url: https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin
+- type: Newsroom
+  url: https://aws.amazon.com/media/?nc2=h_sol_ind_med
+- type: GettingStarted
+  url: https://developer.amazon.com/frustration-free-setup
 - type: Pricing
   url: https://aws.amazon.com/lookout-for-equipment/pricing/
 - type: RateLimits
@@ -197,8 +136,6 @@ common:
   url: authentication/amazon-lookout-for-equipment-authentication.yml
 - type: Portal
   url: https://aws.amazon.com/lookout-for-equipment/
-- type: Portal
-  url: https://aws.amazon.com/lookout-for-equipment/
 - type: Documentation
   url: https://docs.aws.amazon.com/lookout-for-equipment/
 - type: TermsOfService
@@ -207,12 +144,8 @@ common:
   url: https://aws.amazon.com/privacy/
 - type: Support
   url: https://aws.amazon.com/premiumsupport/
-- type: Blog
-  url: https://aws.amazon.com/blogs/machine-learning/tag/amazon-lookout-for-equipment/
 - type: GitHubOrganization
   url: https://github.com/aws
-- type: Console
-  url: https://console.aws.amazon.com/lookoutequipment/
 - type: Signup
   url: https://portal.aws.amazon.com/billing/signup
 - type: Login
@@ -259,6 +192,212 @@ common:
   url: vocabulary/amazon-lookout-for-equipment-vocabulary.yaml
 - type: Integrations
   url: https://aws.amazon.com/marketplace
+- type: DataProcessing
+  url: privacy/amazon-lookout-for-equipment-privacy-policy.yml
+- type: Attestations
+  url: compliance/amazon-lookout-for-equipment-compliance.yml
+
+apis:
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-datasets-api
+  name: Amazon Lookout for Equipment Datasets API
+  description: Equipment sensor dataset management
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Datasets
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-datasets-api-openapi.yml
+  - type: Pricing
+    url: https://aws.amazon.com/lookout-for-equipment/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/lookout-for-equipment/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-dataset-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-model-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-lookout-for-equipment-context.jsonld
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-data-ingestion-job-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Data Ingestion Job API
+  description: The Lookout For Equipment Data Ingestion Job API from Amazon Lookout for Equipment — 3 operation(s) for lookout for equipment data
+    ingestion job.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Data Ingestion Job
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-data-ingestion-job-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-data-ingestion-job-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-start-data-ingestion-job-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-data-ingestion-jobs-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-data-ingestion-jobs-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-start-data-ingestion-job-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-data-ingestion-job-request-schema.json
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-inference-scheduler-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Inference Scheduler API
+  description: The Lookout For Equipment Inference Scheduler API from Amazon Lookout for Equipment — 6 operation(s) for lookout for equipment
+    inference scheduler.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Inference Scheduler
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-inference-scheduler-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-inference-scheduler-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-create-inference-scheduler-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-update-inference-scheduler-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-create-inference-scheduler-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-inference-schedulers-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-stop-inference-scheduler-response-schema.json
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-label-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Label API
+  description: The Lookout For Equipment Label API from Amazon Lookout for Equipment — 4 operation(s) for lookout for equipment label.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Label
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-label-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-create-label-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-label-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-labels-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-labels-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-delete-label-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-label-request-schema.json
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-label-group-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Label Group API
+  description: The Lookout For Equipment Label Group API from Amazon Lookout for Equipment — 5 operation(s) for lookout for equipment label group.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Label Group
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-label-group-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-create-label-group-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-label-group-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-update-label-group-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-label-groups-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-create-label-group-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-label-groups-response-schema.json
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-model-version-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Model Version API
+  description: The Lookout For Equipment Model Version API from Amazon Lookout for Equipment — 3 operation(s) for lookout for equipment model
+    version.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Model Version
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-model-version-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-model-version-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-import-model-version-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-model-versions-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-model-versions-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-import-model-version-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-model-version-request-schema.json
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-operations-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Operations API
+  description: The Lookout For Equipment Operations API from Amazon Lookout for Equipment — 9 operation(s) for lookout for equipment operations.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-operations-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-update-active-model-version-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-inference-executions-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-inference-events-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-inference-executions-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-sensor-statistics-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-sensor-statistics-response-schema.json
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-resource-policy-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Resource Policy API
+  description: The Lookout For Equipment Resource Policy API from Amazon Lookout for Equipment — 3 operation(s) for lookout for equipment resource
+    policy.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Resource Policy
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-resource-policy-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-put-resource-policy-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-resource-policy-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-put-resource-policy-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-delete-resource-policy-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-resource-policy-request-schema.json
+- aid: amazon-lookout-for-equipment:amazon-lookout-for-equipment-retraining-scheduler-api
+  name: Amazon Lookout for Equipment Lookout For Equipment Retraining Scheduler API
+  description: The Lookout For Equipment Retraining Scheduler API from Amazon Lookout for Equipment — 7 operation(s) for lookout for equipment
+    retraining scheduler.
+  humanURL: https://aws.amazon.com/lookout-for-equipment/
+  baseURL: https://lookoutequipment.amazonaws.com
+  tags:
+  - Lookout For Equipment Retraining Scheduler
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-lookout-for-equipment-retraining-scheduler-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-create-retraining-scheduler-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-describe-retraining-scheduler-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-update-retraining-scheduler-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-retraining-schedulers-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-list-retraining-schedulers-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-lookout-for-equipment-start-retraining-scheduler-response-schema.json
+
 integrations:
 - name: Sign in
 - name: Agent Mode
@@ -269,8 +408,24 @@ integrations:
 - name: Become a Channel Partner
 - name: Sell in AWS Marketplace
 - name: Manage Your Account
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+
 x-parent: amazon-web-services
+
 x-relationship: product
+x-enrichment:
+  date: '2026-11-11'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v6
+x-coverage:
+  state: none
+  reason: defunct
+  detail: AWS discontinued Amazon Lookout for Equipment on October 7, 2026 (end-of-support notice on the product page); the user guide and console now return 404 while the Smithy-derived contract and SDK client remain as historical artifacts.
+  evidence:
+  - url: https://aws.amazon.com/lookout-for-equipment/
+    status: 200
+  - url: https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/what-is.html
+    status: 404
+  - url: https://console.aws.amazon.com/lookoutequipment/
+    status: 404
+  checked: '2026-11-11'

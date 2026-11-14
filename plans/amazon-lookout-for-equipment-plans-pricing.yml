@@ -2,6 +2,7 @@
 generated: '2026-10-07'
 method: searched
 source: https://aws.amazon.com/lookout-for-equipment/pricing/
+name: Amazon Lookout for Equipment API Plans
 sources:
 - https://aws.amazon.com/lookout-for-equipment/pricing/
 provenance:
@@ -46,7 +47,7 @@ rate_limit_statements:
 - All model training jobs are charged for a minimum of one hour of elapsed time and then prorated to the
   nearest second
 x-canonical:
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   vocabulary: engine/economics/plans-canonical.yml
   models:
   - hybrid
