@@ -369,9 +369,6 @@ artifacts:
   security/amazon-lookout-for-equipment-vulnerability-disclosure.yml:
     method: searched
     evidence: declared in the artifact
-  sla/amazon-lookout-for-equipment-sla.yml:
-    method: generated
-    evidence: declared in the artifact
   smithy/lookoutequipment-2020-12-15.json:
     method: harvested
     evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/5ff5b20d1c425dffd72b38b9a8019ef65824f4fe/models/lookoutequipment/service/2020-12-15/lookoutequipment-2020-12-15.json
